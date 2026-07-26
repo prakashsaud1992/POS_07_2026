@@ -1,0 +1,6 @@
+{
+  "appId": "com.bhabhu.inventory",
+  "appName": "BhaBhu Inventory",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

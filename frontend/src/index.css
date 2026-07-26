@@ -1,0 +1,42 @@
+:root {
+  --bg: #f4f7fb;
+  --ink: #133057;
+  --muted: #4f627c;
+  --panel: #ffffff;
+  --line: #d8e1ec;
+  --accent: #1f7a8c;
+  --chip: #e6f4f7;
+  --chip-text: #134b56;
+
+  font-family: 'Nunito', 'Trebuchet MS', 'Segoe UI', sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(31, 122, 140, 0.12), transparent 38%),
+    radial-gradient(circle at 90% 0%, rgba(9, 180, 194, 0.1), transparent 30%),
+    var(--bg);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}

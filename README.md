@@ -42,6 +42,12 @@ Open: `http://localhost:5173`
 
 ## Mobile Build
 
+## Distribution Policy (Both Platforms Required)
+
+- Android distribution method: APK download (GitHub Actions artifact or Releases)
+- iOS distribution method: Xcode direct install or TestFlight
+- Goal for this project: always keep both Android and iOS installable for staff devices
+
 ### Android
 
 ```bash
@@ -52,6 +58,10 @@ npm run android:open
 
 Build APK in Android Studio.
 
+Alternative (cloud build artifact):
+
+- Open repository Actions and download artifact from the latest successful `Build Android APK` run
+
 ### iOS
 
 ```bash
@@ -61,6 +71,8 @@ npm run ios:open
 ```
 
 Install on iPhone from Xcode (requires Apple signing setup).
+
+For non-technical iPhone users, publish through TestFlight.
 
 ## Environment Variables
 

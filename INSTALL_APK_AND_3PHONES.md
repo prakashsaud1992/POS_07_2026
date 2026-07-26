@@ -2,6 +2,13 @@
 
 This guide installs the app directly to Android and iPhone devices without Play Store, and uses internet backend so all 3 phones scan and update the same inventory.
 
+## Platform Install Rules (Do Not Skip)
+
+- Android users install from APK.
+- iPhone users install from Xcode or TestFlight.
+- A GitHub source-code link alone is not an install file for phones.
+- When sharing with staff, share install links/files, not only repository folders.
+
 ## 1. Current Project Status
 
 - Frontend: React + Capacitor Android + iOS wrappers ready
@@ -92,6 +99,12 @@ npm run android:open
 - APK output location usually:
   - `frontend/android/app/build/outputs/apk/debug/app-debug.apk`
 
+Alternative cloud path:
+
+1. Open GitHub Actions run for workflow `Build Android APK`.
+2. Download artifact `app-debug-apk` from a successful run.
+3. Share resulting `app-debug.apk` with Android user.
+
 ## 5. Build iPhone App (No App Store)
 
 1. Open iOS project:
@@ -108,6 +121,13 @@ npm run ios:open
 - Product -> Run (installs directly on connected iPhone)
 
 Note: iPhone installation requires Apple developer signing. If free Apple ID is used, you may need to trust developer profile on device settings.
+
+Recommended for easy distribution to non-technical iPhone users:
+
+1. Archive app in Xcode.
+2. Upload build to App Store Connect.
+3. Add users in TestFlight.
+4. Share TestFlight invite link.
 
 ## 6. Install on 3 Phones
 
